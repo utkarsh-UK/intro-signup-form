@@ -1,0 +1,130 @@
+/* tag selectors */
+html, body {
+    background: no-repeat center center url("../images/bg-intro-desktop.png") ;
+    background-color: hsl(0, 100%, 74%);
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2, h6 {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h6 {
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 1;
+}
+
+p {
+    font-size: 0.6rem;
+    font-weight: 300;
+    color: hsl(246, 25%, 77%);
+}
+
+input {
+    border-radius: 6px;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    border: 1px solid hsl(249, 10%, 26%);
+    color: hsl(249, 10%, 26%) ;
+    width: 80%;
+    font-weight: 600;
+}
+
+button {
+    border: none;
+}
+
+/* class selectors */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-desc {
+    margin: auto 0;
+    padding: 0 10%;
+}
+
+/* Right Side */
+.right-side {
+    margin: auto 0;
+    padding: 0 2%;
+}
+
+.promo-background {
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 1px 4px 2px 1px hsl(249, 10%, 26%) ;
+    color:  hsl(249, 10%, 26%);
+    margin-bottom: 20px;
+}
+
+.promo-background b {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* form */
+.form {
+    background-color: #fff;
+    height: 60vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 3px 1px #707070 ;
+    padding: 30px 25px;
+    text-align: center;
+}
+
+
+.btn {
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 1px 2px 2px 1px hsl(120, 100%, 25%)  ;
+    color: #fff;
+    margin-bottom: 20px;
+    width: 90%;
+    margin: 0 auto 15px auto;
+}
+
+.form span {
+    color: hsl(0, 100%, 74%) ;
+    font-weight: 600;
+}
+
+/* Sudo Selectors */
+input:focus {
+    border-radius: 6px;
+    border: 1px solid hsl(249, 10%, 26%);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width: 675px) {
+    html, body {
+        overflow-y: scroll;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
