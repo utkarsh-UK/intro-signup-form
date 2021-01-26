@@ -3,7 +3,6 @@ html, body {
     background: no-repeat center center url("../images/bg-intro-desktop.png") ;
     background-color: hsl(0, 100%, 74%);
     height: 100vh;
-    overflow: hidden;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -34,7 +33,7 @@ p {
 input {
     border-radius: 6px;
     padding: 15px 30px;
-    margin-bottom: 20px;
+    margin-bottom: 4px;
     border: 1px solid hsl(249, 10%, 26%);
     color: hsl(249, 10%, 26%) ;
     width: 80%;
@@ -80,7 +79,7 @@ button {
 /* form */
 .form {
     background-color: #fff;
-    height: 60vh;
+    height: 65vh;
     border-radius: 10px;
     box-shadow: 0 4px 3px 1px #707070 ;
     padding: 30px 25px;
@@ -105,6 +104,41 @@ button {
     font-weight: 600;
 }
 
+.error-message {
+    float: right;
+    margin: 6px 0;
+    margin-right: 25px;
+    color: hsl(0, 100%, 74%) ;
+    font-weight: 500;
+    font-size: 0.6rem;
+}
+
+/* Error state */
+.valid {
+    visibility: hidden;
+}
+
+.invalid {
+    visibility: visible;
+    border-color:  hsl(0, 100%, 74%);
+}
+
+.invalid-input {
+    border-color:  hsl(0, 100%, 74%);
+    color:  hsl(0, 100%, 74%);
+    border-width: 2px;
+}
+
+/* Footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
 /* Sudo Selectors */
 input:focus {
     border-radius: 6px;
@@ -118,13 +152,36 @@ button:hover {
 /* Responsive */
 @media screen and (max-width: 675px) {
     html, body {
-        overflow-y: scroll;
         text-align: center;
+        padding: 5% 2%;
     }
 
     .container {
         display: flex;
         flex-direction: column;
-        height: 100%;
+    }
+
+    .left-desc {
+        margin: auto 0;
+        padding: 0 2%;
+    }
+
+    .left-desc h2 {
+        font-size: 2.5rem;
+    }
+
+    .promo-background {
+        padding: 10px 30px;
+    }
+
+    .form {
+        height: 45vh;
+        margin-bottom: 15%;
+    }
+}
+
+@media screen and (min-width: 675px) {
+    html, body {
+        overflow: hidden;
     }
 }

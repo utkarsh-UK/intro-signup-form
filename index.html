@@ -12,6 +12,8 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="css/index.css" />
 
     <!-- Google Fonts -->
@@ -20,17 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <script src="scripts/index.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -55,6 +47,7 @@
             placeholder="First Name"
             autocapitalize="words"
           />
+          <p class="error-message valid">First name cannot be empty</p>
           <input
             type="text"
             name="last_name"
@@ -62,21 +55,25 @@
             placeholder="Last Name"
             autocapitalize="words"
           />
+          <p class="error-message valid">Last name cannot be empty</p>
           <input
             type="email"
             name="email"
             id="email"
             placeholder="Email Address"
           />
+          <p class="error-message valid">Looks like this is not an email</p>
           <input
             type="password"
             name="password"
             id="password"
             placeholder="Password"
           />
-          <button class="btn">CLAIM YOUR FREE TRIAL</button>
+          <p class="error-message valid">Password cannot be empty</p>
+          <button class="btn" id="submit">CLAIM YOUR FREE TRIAL</button>
           <p>
-            By clicking the button, you are agreeing to our <span>Terms and Services</span>
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
           </p>
         </div>
       </div>
